@@ -1,0 +1,56 @@
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+#app {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#fileInput {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    background-color: #a2fa91;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#uploadButton {
+    background-color: #6063c5 ;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+#predictionResult,
+#probabilityResult {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #6063c5;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="app">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="fileInput">Choose File</label>
+            <input id="fileInput" type="file" name="file" accept=".png, .jpg, .jpeg" />
+            <button id="uploadButton" type="button" onclick="uploadImage()">Predict</button>
+        </form>
+        <img id="uploadedImage" alt="Uploaded Image" />
+        <p id="predictionResult">Prediction: </p>
+        <p id="probabilityResult">Probability: </p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
